@@ -50,6 +50,7 @@ const WatchRoom: React.FC<WatchRoomProps> = () => {
   const playerInitialized = useRef(false);
   const scriptLoaded = useRef(false);
   
+  
   // State
   const [roomData, setRoomData] = useState<RoomData | null>(null);
   const [currentUser, setCurrentUser] = useState<User | null>(null);

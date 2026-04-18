@@ -15,12 +15,12 @@ const Player = () => {
     if (!player) return;
 
     isHandlingRemote.current = true;
-    
+
     // Sync time
     if (Math.abs(player.getCurrentTime() - videoState.currentTime) > 2) {
       player.seekTo(videoState.currentTime);
     }
-    
+
     // Sync play state
     if (videoState.playState === 'playing') {
       player.playVideo();
